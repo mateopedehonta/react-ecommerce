@@ -1,0 +1,18 @@
+ul{
+    display: flex;
+    flex-direction:row-reverse;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+a{color: black;}
+
+li{
+    padding: 0.5rem;
+}
+
+li:hover{
+    border: 1px solid black;
+}
+
+
