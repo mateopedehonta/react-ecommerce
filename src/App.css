@@ -1,18 +1,27 @@
 ul{
     display: flex;
     flex-direction:row-reverse;
+    align-items: center;
     margin-top: 1rem;
     margin-right: 1rem;
     gap: 1rem;
 }
-a{color: black;}
-
-li{
+nav{
+    /* height: 5vh; */
+    display: flex;
+    justify-content: space-around;
     padding: 0.5rem;
 }
+a{color: black;} 
 
+.logo{
+    width: 4vw;
+}
 li:hover{
     border: 1px solid black;
 }
 
+.catalogo h2{
+    text-align: center;
+}
 

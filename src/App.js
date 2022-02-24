@@ -1,10 +1,12 @@
-// import'./components/navBar.js'
 import './App.css';
+import Catalogo from './components/Catalogo';
 import NavBar from './components/navBar.js';
+
 
 function App() {
   return <>
-    <NavBar /> 
+    <NavBar />
+    <Catalogo/>
   </>
 }
 export default App;
