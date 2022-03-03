@@ -1,8 +1,8 @@
 import React from "react"
-import logo from "./../music-logo.svg"
+import logo from "./../keyboard.png"
 
 const Logo =()=>{
-  return( <img src={logo}></img> )
+  return( <img className="logo" src={logo}></img> )
 }
 
 export default Logo

@@ -4,7 +4,7 @@ import Logo from "./logo";
 function NavBar() {
     return (
     <nav>
-      <a href="#" className="logo"><Logo/></a>
+      <a href="#" ><Logo/></a>
       
       <ul>
         <li><a href='#'>Home</a></li>
