@@ -1,12 +1,12 @@
 import './App.css';
-import Catalogo from './components/Catalogo';
 import NavBar from './components/navBar';
+import ItemListConatiner from './containers/ItemListContainer';
 
 
 function App() {
   return <>
     <NavBar />
-    <Catalogo/>
+    <ItemListConatiner/>
   </>
 }
 export default App;
