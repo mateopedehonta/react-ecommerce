@@ -6,7 +6,7 @@ function NavBar() {
     <nav>
       <a href="#" ><Logo/></a>
       
-      <ul>
+      <ul className="nav">
         <li><a href='#'>Home</a></li>
         <li><a href='#'>Shop</a></li>
         <li><a href='#'>About us</a></li>

@@ -20,18 +20,14 @@ a{
 .logo{
     width: 4vw;
 }
-li:hover{
+.nav li:hover{
     border: 1px solid black;
 }
 
-.catalogo h2{
-    text-align: center;
-    /* display: flex; */
-}
-
-.catalogo{
+.contador{
     display: flex;
     justify-content: center;
+    gap: 0.1rem;
 }
 .button,.count{
     background-color: #0f110f;
@@ -42,4 +38,28 @@ li:hover{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+.button:hover,.count:hover{
+    background-color: #1d1f1d;
+}
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+}
+.liCatalogo{
+    width: max-content;
+    border: 1px solid black;
+    padding: 0.2rem;
+}
+.liCatalogo h2{
+    text-align: center;
+}
+.dnone{
+    display: none;
+}
+.d{
+    display: block;
 }

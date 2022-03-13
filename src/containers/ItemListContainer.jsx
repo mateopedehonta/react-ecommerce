@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import Contador from '../components/Contador';
 import Item from './Items';
-const productos= [
-    {name:'Teclado',id:1},
-    {name:'Mause',id:2},
-    {name:'Monitor',id:3}
-    
-]
+import productos from '../array/productos';
+
 const peticion = new Promise((res,rej)=>{
     setTimeout(() => {
         res(productos)
-    }, 3000);
+    }, 1000);
 })
 const ItemListConatiner = ()=>{
     const [productos, setProductos] = useState([])
@@ -26,7 +21,7 @@ const ItemListConatiner = ()=>{
     }, [])
     
     return(
-        <div>
+        <div className='catalogo'>
             {
                 loading ? <h1>Cargando...</h1>
                 :

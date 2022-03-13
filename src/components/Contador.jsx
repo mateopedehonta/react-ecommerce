@@ -11,7 +11,7 @@ const Catalogo =()=>{
     }
 
     return(
-        <div className="catalogo">
+        <div className="contador">
             <button className="button" onClick={restarCount}>-</button>
             <p className="count">{count}</p>
             <button className="button" onClick={sumarCount}>+</button>
