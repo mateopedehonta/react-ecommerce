@@ -1,25 +1,33 @@
 import React, { useEffect, useState } from 'react';
 import Item from './Items';
-import productos from '../array/productos';
+import { useParams } from 'react-router-dom';
+import getFetch from '../array/getFetch';
 
-const peticion = new Promise((res,rej)=>{
-    setTimeout(() => {
-        res(productos)
-    }, 1000);
-})
-const ItemListConatiner = ()=>{
+const ItemListContainer = ()=>{
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
-
+    const { categoriaId } = useParams()
     useEffect(() => {
-    peticion
-     .then((res)=>{
-         return res
-     })
-     .then((resp)=>{setProductos(resp)})
-     .finally(()=>setLoading(false))
-    }, [])
+        
+        if (categoriaId) {
+            getFetch
+                .then((res)=>{
+                    return res
+                })
+                .then((resp)=>{setProductos(resp.filter(pro => pro.categoria===categoriaId))})
+                .finally(()=>setLoading(false))
+        }else{
+            getFetch
+                .then((res)=>{
+                    return res
+                })
+                .then((resp)=>{setProductos(resp)})
+                .catch(err => console.log(err))
+                .finally(()=>setLoading(false))
+        }
     
+    }, [categoriaId])
+
     return(
         <div className='catalogo'>
             {
@@ -32,4 +40,4 @@ const ItemListConatiner = ()=>{
     )
 } 
 
-export default ItemListConatiner
+export default ItemListContainer
