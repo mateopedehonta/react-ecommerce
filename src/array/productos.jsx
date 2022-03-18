@@ -3,15 +3,15 @@ const productos= [
         name:'Maus 1',
         id:'1',
         img:'/img/telcado.png',
-        stock:'5',
+        stock:5,
         des:'descripcion',
-        categoria:'mause'
+        categoria:'mause',
     },
     {
         name:'Mause 2',
         id:'2',
         img:'./../img/mause.png',
-        stock:'3',
+        stock:3,
         des:'descripcion',
         categoria:'mause'
     },
@@ -19,7 +19,7 @@ const productos= [
         name:'Telcado 1',
         id:'3',
         img:'./../img/monitor.png',
-        stock:'8',
+        stock:8,
         des:'descripcion',
         categoria:'teclado'
     },
@@ -27,7 +27,7 @@ const productos= [
         name:'Teclado 2',
         id:'6',
         img:'/img/telcado.png',
-        stock:'5',
+        stock:5,
         des:'descripcion',
         categoria:'teclado'
     },
@@ -35,7 +35,7 @@ const productos= [
         name:'Auricular 1',
         id:'4',
         img:'./../img/mause.png',
-        stock:'3',
+        stock:3,
         des:'descripcion',
         categoria:'auriculares'
     },
@@ -43,7 +43,7 @@ const productos= [
         name:'Auricular 2',
         id:'5',
         img:'./../img/monitor.png',
-        stock:'8',
+        stock:8,
         des:'descripcion',
         categoria:'auriculares'
     }

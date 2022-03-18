@@ -1,22 +1,29 @@
 import React from "react";
 import {useState} from 'react'
-const Catalogo =()=>{
+import { Link } from "react-router-dom";
+const Contador =({stock})=>{
     const [count,setCount] = useState(0)
-
     const restarCount =()=>{
-        setCount(count-1)
+        if (count>0){
+            setCount(count-1)
+        }
     }
     const sumarCount =()=>{
-        setCount(count+1)
+        if (count <=stock ) {
+            setCount(count+1)
+        }
     }
 
-    return(
+    return(<>
         <div className="contador">
             <button className="button" onClick={restarCount}>-</button>
             <p className="count">{count}</p>
             <button className="button" onClick={sumarCount}>+</button>
         </div>
+        <Link to={'/cart'}><button> Agregar al carrito</button></Link>
+        </>
+        
     )
 }
 
-export default Catalogo
+export default Contador

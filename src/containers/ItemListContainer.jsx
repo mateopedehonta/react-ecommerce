@@ -34,7 +34,7 @@ const ItemListContainer = ()=>{
                 loading ? <h1>Cargando...</h1>
                 :
                 productos.map(
-                    (item)=><Item item={item} />)
+                    (item)=><Item item={item} key={item.id} />)
             }
         </div>
     )

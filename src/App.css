@@ -49,9 +49,13 @@ a{
     gap: 1rem;
 }
 .liCatalogo{
+    margin: auto;
     width: max-content;
     border: 1px solid black;
     padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .liCatalogo h2{
     text-align: center;
