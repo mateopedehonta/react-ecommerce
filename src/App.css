@@ -1,23 +1,13 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
+
 ul{
     display: flex;
-    flex-direction:row-reverse;
+    flex-direction:row;
     align-items: center;
     /* margin-top: 1rem; */
     margin-right: 1rem;
     gap: 1rem;
 }
-nav{
-    /* height: 5vh; */
-    /* display: flex; */
-    /* justify-content: space-around; */
-    /* padding: 0.5rem; */
-}
+
 a{
     /* padding: 0.2rem; */
     margin: 0.5rem;
@@ -25,9 +15,6 @@ a{
 
 .logo{
     width: 4vw;
-}
-.nav li:hover{
-    border: 1px solid black;
 }
 
 .contador{
@@ -72,37 +59,41 @@ a{
 .d{
     display: block;
 }
-/* .contador */
-/* .nav li */
-.nav ul li{
-    position: relative;
-    float: left;
 
+nav{
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem; 
 }
+
 .nav ul a {
-    /* display: block; */
-}
-.nav ul ul {
-    display:none;
-    /* position:absolute; */
-    top:100%;
-    left:0;
-    background:#eee;
-    padding:0;
-   }
-
-   .nav ul ul li {
-    /* float:none; */
-    /* width:150px */
-   }
-
-   .nav ul li:hover > ul {
-    /* display:block; */
-   }
-.todos:hover > ul {
     display: block;
 }
+.subNav {
+    display:none;
+    flex-direction: column;
+    /* background:#eee; */
+    position:absolute;
+    /* position: absolute; */
 
+}
+.subNav li {
+    min-width: 100px;
+}
+.todos:hover > ul {
+    /* background-color: #0f110f; */
+    display: flex;
+}
+.subNav li:hover{
+    background:#eee;
+}
+.todos{
+    min-width: 100px;
+}
 .itemCart{
     display: flex;
+}
+.nav  li:hover{
+    /* border: 1px solid black; */
 }

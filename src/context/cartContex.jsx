@@ -10,7 +10,7 @@ const CartContextProvider = ({children})=>{
         setCartList([...cartList,item])
     }
     const eliminarProd =(id)=>{
-        cartList.find(prod => prod.id === id)
+        setCartList( cartList.filter(prod => prod.id !== id))
     }
     const clean =()=>{
         setCartList([])

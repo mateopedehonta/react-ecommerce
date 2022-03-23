@@ -8,13 +8,16 @@ function NavBar() {
       <li><Link to={'/'}><Logo/></Link></li>
       
       <ul >
-        <li><Link to={'/cart'}>Carrito</Link></li>
-        <li className="todos"><Link to={'/'}>Todos</Link></li>
-        <ul className=".dis">
+        <li className="todos"><Link to={'/'}>Todos</Link>
+        <ul className="subNav">
           <li><Link to={'/mause'}>Mause</Link></li>
           <li><Link to={'/teclado'}>Teclado</Link></li>
           <li><Link to={'/auriculares'}>Auriculares</Link></li>
         </ul>
+        </li>
+        
+        <li><Link to={'/cart'}>Carrito</Link></li>
+
       </ul>
     </nav>
     );
