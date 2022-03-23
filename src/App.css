@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 ul{
     display: flex;
     flex-direction:row-reverse;
@@ -8,9 +14,9 @@ ul{
 }
 nav{
     /* height: 5vh; */
-    display: flex;
-    justify-content: space-around;
-    padding: 0.5rem;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* padding: 0.5rem; */
 }
 a{
     /* padding: 0.2rem; */
@@ -65,4 +71,38 @@ a{
 }
 .d{
     display: block;
+}
+/* .contador */
+/* .nav li */
+.nav ul li{
+    position: relative;
+    float: left;
+
+}
+.nav ul a {
+    /* display: block; */
+}
+.nav ul ul {
+    display:none;
+    /* position:absolute; */
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+   }
+
+   .nav ul ul li {
+    /* float:none; */
+    /* width:150px */
+   }
+
+   .nav ul li:hover > ul {
+    /* display:block; */
+   }
+.todos:hover > ul {
+    display: block;
+}
+
+.itemCart{
+    display: flex;
 }

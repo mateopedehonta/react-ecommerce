@@ -4,16 +4,17 @@ import Logo from "./logo";
 
 function NavBar() {
     return (
-    <nav>
+    <nav className="nav">
       <li><Link to={'/'}><Logo/></Link></li>
       
-      <ul className="nav">
+      <ul >
         <li><Link to={'/cart'}>Carrito</Link></li>
-        <li><Link to={'/mause'}>Mause</Link></li>
-        <li><Link to={'/teclado'}>Teclado</Link></li>
-        <li><Link to={'/auriculares'}>Auriculares</Link></li>
-        <li><Link to={'/'}>Todos</Link></li>
-
+        <li className="todos"><Link to={'/'}>Todos</Link></li>
+        <ul className=".dis">
+          <li><Link to={'/mause'}>Mause</Link></li>
+          <li><Link to={'/teclado'}>Teclado</Link></li>
+          <li><Link to={'/auriculares'}>Auriculares</Link></li>
+        </ul>
       </ul>
     </nav>
     );

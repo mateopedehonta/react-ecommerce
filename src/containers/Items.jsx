@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import Contador from "./../components/Contador"
 const Item =({item})=>{
     return(
         <li className="liCatalogo" key={item.id}>
