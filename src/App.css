@@ -80,6 +80,12 @@ nav{
 }
 .subNav li {
     min-width: 100px;
+    background-color: rgb(158, 158, 158);
+}
+.todos:hover{
+    /* background-color: rgb(158, 158, 158); */
+    /* margin-bottom: 1rem; */
+    /* padding-bottom: 1rem; */
 }
 .todos:hover > ul {
     /* background-color: #0f110f; */
@@ -96,4 +102,43 @@ nav{
 }
 .nav  li:hover{
     /* border: 1px solid black; */
+}
+
+/* Cart */
+h2{
+    text-align: center;
+}
+.cart{
+    background:#eee;
+    /* height: 900wh; */
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.cart > div{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+}
+.itemCart{
+    display: flex;
+    /* gap: 1rem; */
+}
+.itemCart div,.itemCart h3{
+    text-align: center;
+    min-width: 150px;
+}
+
+.xIcon:hover{
+    color: red;
 }

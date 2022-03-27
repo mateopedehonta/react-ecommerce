@@ -1,5 +1,7 @@
 import { useState } from "react";
-
+// import Contador from "../components/Contador";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faX} from '@fortawesome/free-solid-svg-icons'
 const ItemCart = ({item, eliminar}) => {
     const [idCart, setIdCart] = useState(item.id)
     const eliminarProd =()=>{
@@ -7,8 +9,11 @@ const ItemCart = ({item, eliminar}) => {
     }
     return(
         <div className="itemCart" key={item.id}>
-                    <p>{item.cantidad} {item.name}</p>
-                    <button onClick={eliminarProd}>Eliminar </button>
+                    <div>{item.name}</div>
+                    <div></div>
+                   <div>{item.cantidad}</div>
+                   <div><FontAwesomeIcon icon={faX} onClick={eliminarProd} className='xIcon'/></div>                   
+                    <div> {item.precio * item.cantidad}</div>
                 </div>
     )
 }
