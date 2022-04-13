@@ -1,3 +1,16 @@
+git branch  
+
+git switch main 
+
+git pull origin master
+
+// commitear y pushear a main
+
+git branch -D nombre-rama 
+git push 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
