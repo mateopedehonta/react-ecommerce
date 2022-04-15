@@ -1,19 +1,24 @@
-// import { useState } from "react"
 import { useCartContext } from "../context/cartContex"
-import ItemCart from "./ItemCart"
+import ItemCart from "../Items/ItemCart"
 import { Link } from "react-router-dom";
+import GenerarCompra from "../components/GenerarCompra";
 
 
 const Cart = ()=>{
-    const {cartList,clean,eliminarProd,precioTotal}= useCartContext()
+    const {cartList,clean,eliminarProd,precioTotal,estadoOrden,setEstadoOrden}= useCartContext()
 
-    // const [id, setId] = useState(null)
+  
     const cleanCart =()=>{
         clean()
     }
     const eliminar =id=>{
         eliminarProd(id)
     }
+    const otraCompra =()=>{
+        setEstadoOrden(true)
+        clean()
+    }
+    // console.log(estadoOrden);
     return <div className=" cart ">
             <h2> Mi carrtito de compra</h2>
             {
@@ -24,8 +29,9 @@ const Cart = ()=>{
                     <Link to={'/'}>Ir a comprar</Link>
                 </div>
                 :
+                estadoOrden?
                 <div>
-                <div className="itemCart" >
+                    <div className="itemCart" >
                     <h3>Nombre</h3>
                     <h3>Descripcion</h3>
                    <h3>Cantdidad</h3>
@@ -41,9 +47,18 @@ const Cart = ()=>{
                     <h3>{precioTotal()}</h3>
                 </div>
                 <button onClick={cleanCart}>Eliminar todos los productos</button>
-            </div>
-            }
+                <GenerarCompra />
+                </div>
+               
+                    :
+                    <div>
+                        <h2>Compra terminada</h2>
+                        <Link to={'/'}><input type="button" value="Hacer otra compra" onClick={otraCompra}/></Link>
+                        
+                    </div>
+                    
             
+             }
     </div> 
 }
 

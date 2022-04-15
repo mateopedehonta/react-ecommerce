@@ -1,4 +1,6 @@
-
+body{
+    background-color: #2a382a;
+}
 ul{
     display: flex;
     flex-direction:row;
@@ -112,6 +114,8 @@ h2{
     background:#eee;
     /* height: 900wh; */
     height: 90vh;
+    min-width: 70vw;
+    /* width: 30rem; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,6 +134,9 @@ h2{
     gap: 1rem;
     border-radius: 10px;
 }
+.iconCart{
+    font-size: 1.3rem;
+}
 .itemCart{
     display: flex;
     /* gap: 1rem; */
@@ -141,4 +148,21 @@ h2{
 
 .xIcon:hover{
     color: red;
+}
+
+/* Form */
+.form{
+    /* height: min-content; */
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.form input,.form select {
+    font-size: 1rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
 }

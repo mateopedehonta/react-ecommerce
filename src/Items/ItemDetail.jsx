@@ -14,6 +14,8 @@ const ItemDitail =({producto})=>{
         <li className="liCatalogo" key={producto.id}>
             <h2>{producto.name}</h2>
             {
+                
+
                 count ?
                 <>
                  <Link to="/cart"><button>Ir al carrito</button></Link>

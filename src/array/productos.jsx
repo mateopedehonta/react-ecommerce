@@ -1,7 +1,6 @@
 const productos= [
     {
         name:'Maus Hyperx',
-        id:'1',
         img:'/img/telcado.png',
         stock:5,
         des:'descripcion',
@@ -10,7 +9,6 @@ const productos= [
     },
     {
         name:'Mause Logitech',
-        id:'2',
         img:'./../img/mause.png',
         stock:3,
         des:'descripcion',
@@ -19,7 +17,6 @@ const productos= [
     },
     {
         name:'Telcado Logitech',
-        id:'3',
         img:'./../img/monitor.png',
         stock:8,
         des:'descripcion',
@@ -28,7 +25,6 @@ const productos= [
     },
     {
         name:'Teclado Glorius ',
-        id:'6',
         img:'/img/telcado.png',
         stock:5,
         des:'descripcion',
@@ -37,7 +33,6 @@ const productos= [
     },
     {
         name:'Auricular Corsair',
-        id:'4',
         img:'./../img/mause.png',
         stock:3,
         des:'descripcion',
@@ -46,7 +41,6 @@ const productos= [
     },
     {
         name:'Auricular Redragon',
-        id:'5',
         img:'./../img/monitor.png',
         stock:8,
         des:'descripcion',
