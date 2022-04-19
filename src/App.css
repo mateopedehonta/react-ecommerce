@@ -136,6 +136,12 @@ h2{
 }
 .iconCart{
     font-size: 1.3rem;
+  
+}
+.iconCart { 
+
+    display: flex;
+    flex-direction: row;
 }
 .itemCart{
     display: flex;
